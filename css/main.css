@@ -1,0 +1,80 @@
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--menu1);
+}
+
+::-webkit-scrollbar-thumb{
+    background: hsl(0, 0%, 98%);
+}
+:root{
+    --menu1:black;
+    --menu2:white;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+
+}
+a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+.container{
+    padding:1rem;
+    width:min(100%, 1200px);
+}
+
+/* Side Menu */
+nav{
+    display:grid;
+    grid-template-columns: 300px 1fr;
+    position: fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100%;
+    z-index:100;
+}
+
+nav ul{
+    overflow-y:auto;
+    height:100%;
+    background-color: var(--menu1);
+    padding: 0;
+}
+nav a{
+    display: block;
+    text-align: center;
+    padding:3rem 1.5rem;
+    overflow: hidden;
+}
+nav a:hover{
+    background-color: antiquewhite;
+}
+nav div.overlay{
+    background-color: rgba(0, 0, 0, 0.516);
+}
+/* Dropdown */
+.menu li.active > ul{
+    max-height: 900px;
+}
+.dropdown-content{
+    max-height: 0;
+    transition: max-height 1s ease-out;
+    overflow: hidden;
+    background-color: white;
+}
+.dropdown-content a{
+    color:black;
+}
