@@ -36,6 +36,10 @@ a{
 }
 
 /* Side Menu */
+
+/* Logo */
+.logo-container{
+}
 nav{
     display:grid;
     grid-template-columns: 300px 1fr;
