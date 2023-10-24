@@ -77,13 +77,21 @@ a{
 .exit-icon:hover{
     color:grey;
 }
-
+/* Logo */
+.logo-container{
+    padding: 1rem;
+    height: 105px;
+}
+.logo{
+    height:100%;
+}
 /* Nav */
 nav{
     position: fixed;
     top:0;
     left:0;
     height:100vh;
+    height: 100dvh;
     width:0px;
     z-index:10;
     transition: width 0.4s ease-out;
